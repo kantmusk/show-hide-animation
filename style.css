@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 20px 35px;
+  font-size: 1.5em;
+  position: relative;
+  background-color: #ffbd33;
+}
+#collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 200ms ease-in;
+  font-size: 1.5em;
+
+}
+#collapse.open {
+  grid-template-rows: 1fr;
+}
+#collapse div {
+  min-height: 0;
+  padding: 5px 0px;
+}
